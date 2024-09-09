@@ -1,0 +1,391 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMaster.master.cs" Inherits="Matrimonial_final.UserMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="csrf-token" content="gyXM93j6u3droISP5X2NHl4sttDexX4zjHUBBwDf">
+    <meta name="app-url" content="//demo.activeitzone.com/matrimonial/">
+    <meta name="file-base-url" content="//demo.activeitzone.com/matrimonial/public/">
+    <!-- Title -->
+    <title>Matrimonial</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Best rated Matrimonial PHP script" />
+    <meta name="keywords" content="Keyword1, keyword2">
+
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="testing">
+    <meta itemprop="description" content="Best rated Matrimonial PHP script">
+    <meta itemprop="image" content="">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="testing">
+    <meta name="twitter:description" content="Best rated Matrimonial PHP script">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="testing" />
+    <meta property="og:type" content="Business Site" />
+    <meta property="og:url" content="home.aspx" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Best rated Matrimonial PHP script" />
+    <meta property="og:site_name" content="Active Matrimonial CMS" />
+    <meta property="fb:app_id" content="asdws121">
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://demo.activeitzone.com/matrimonial/public/uploads/all/HKb4dap327ArsZtb12KXUNeFVCfbA7mZBqQIGrCw.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
+    <link rel="stylesheet" href="https://demo.activeitzone.com/matrimonial/public/assets/css/vendors.css">
+    <link rel="stylesheet" href="https://demo.activeitzone.com/matrimonial/public/assets/css/aiz-core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script>
+        var AIZ = AIZ || {};
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: #6d6e6f;
+        }
+
+        :root {
+            --primary: #FD2C79;
+            --hov-primary: #FD2C79;
+            --soft-primary: rgba(253,44,121,0.15);
+            --secondary: #FD655B;
+            --soft-secondary: rgba(253,101,91,0.15);
+        }
+
+        .text-primary-grad {
+            background: rgb(253, 41, 123);
+            background: -moz-linear-gradient(0deg, rgba(253,44,121,1) 0%, rgba(253,101,91,1) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(253,44,121,1) 0%, rgba(253,101,91,1) 100%);
+            background: linear-gradient(0deg, rgba(253,44,121,1) 0%, rgba(253,101,91,1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-primary,
+        .bg-primary-grad {
+            background: rgb(253, 41, 123);
+            background: -moz-linear-gradient(225deg, rgba(253,44,121,1) 0%, rgba(253,101,91,1) 100%);
+            background: -webkit-linear-gradient(225deg, rgba(253,44,121,1) 0%, rgba(253,101,91,1) 100%);
+            background: linear-gradient(225deg, rgba(253,44,121,1) 0%, rgba(253,101,91,1) 100%);
+        }
+
+        .fill-dark {
+            fill: #4d4d4d;
+        }
+
+        .fill-primary-grad stop:nth-child(1) {
+            stop-color: rgba(253,101,91,1);
+        }
+
+        .fill-primary-grad stop:nth-child(2) {
+            stop-color: rgba(253,44,121,1);
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="text-left">
+    <div class="aiz-main-wrapper d-flex flex-column position-relative  pt-8 pt-lg-10  bg-white">
+
+        <div class=" position-fixed  w-100 top-0 z-1020">
+            <div class="top-navbar bg-white border-bottom z-1035 py-2 d-none d-lg-block">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col">
+                            <ul class="list-inline d-flex justify-content-between justify-content-lg-start mb-0">
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-reset opacity-60">
+                                        <span>Welcome to Matrimonial</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-7 col">
+                            <ul class="list-inline mb-0 d-flex align-items-center justify-content-end ">
+                                <li class="list-inline-item mr-3 pr-3 border-right text-reset opacity-60">
+                                    <span>Help Line</span>
+                                    <span>+91 83475 35502</span>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="logout.aspx"
+                                        class="btn btn-sm bg-primary-grad text-white fw-600 py-1 border">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header class="aiz-header shadow-md bg-white border-gray-300">
+                <div class="aiz-navbar position-relative">
+                    <div class="container">
+                        <div class="d-lg-flex justify-content-between text-center text-lg-left">
+                            <div class="logo">
+                                <a href="home.aspx" class="d-inline-block py-15px">
+                                    <img src="https://demo.activeitzone.com/matrimonial/public/uploads/all/2BiZbRGY4x4KjEojR4KkiYLxHY2yyfM2bOsERGro.png" alt="testing"
+                                        class="mw-100 h-30px h-md-40px" height="40">
+                                </a>
+                            </div>
+                            <ul class="mb-0 pl-0 ml-lg-auto d-lg-flex align-items-stretch justify-content-center justify-content-lg-start mobile-hor-swipe">
+                                <li class="d-inline-block d-lg-flex pb-1 ">
+                                    <a class="nav-link text-uppercase fw-700 fs-15 d-flex align-items-center bg-white py-2"
+                                        href="home.aspx">
+                                        <i class="fa-solid fa-house-user mr-1"></i>
+                                        <span class="text-primary-grad mb-n1">Home</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top d-none d-lg-block">
+                    <div class="container">
+                        <ul class="list-inline d-flex align-items-center mb-0">
+                            <li class="list-inline-item">
+                                <a href="home.aspx"
+                                    class="text-reset d-inline-block px-4 py-3 fw-600 text-primary-grad opacity-100">
+                                    <%--<i class="las la-tachometer-alt mr-1"></i>--%>
+                                    <i class="fa-solid fa-gauge mr-1"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"
+                                    class="text-reset d-inline-block px-4 py-3 fw-600 ">
+                                    <%--<i class="la la-heart-o mr-1"></i>--%>
+                                    <i class="fa-solid fa-magnifying-glass mr-1"></i>
+                                    <span>Search</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="ViewInterest.aspx"
+                                    class="text-reset d-inline-block px-4 py-3 fw-600 ">
+                                    <%--<i class="la la-heart-o mr-1"></i>--%>
+                                    <i class="fa-solid fa-heart mr-1"></i>
+                                    <span>View Requests</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="Shortlisted.aspx"
+                                    class="text-reset d-inline-block px-4 py-3 fw-600 ">
+                                    <%--<i class="la la-heart-o mr-1"></i>--%>
+                                    
+                                    <i class="fa-solid fa-check-to-slot"></i>
+                                    <span>Shortlisted</span>
+                                </a>
+                            </li>
+                            <%--<li class="list-inline-item">
+                                <a href="AcceptedRequests.aspx"
+                                    class="text-reset d-inline-block px-4 py-3 fw-600 ">
+                                    <%--<i class="la la-heart-o mr-1"></i>
+                                    <i class="fa-solid fa-list-check  mr-1"></i>
+                                    <span>Accepted Requests</span>
+                                </a>
+                            </li--%>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="d-flex align-items-start">
+                    <div class="aiz-user-sidenav-wrap pt-4 sticky-top c-scrollbar-light position-relative z-1 shadow-none">
+                        <div class="absolute-top-left d-xl-none">
+                            <button class="btn btn-sm p-2" data-toggle="class-toggle" data-target=".aiz-mobile-side-nav" data-same=".mobile-side-nav-thumb">
+                                <i class="las la-times la-2x"></i>
+                            </button>
+                        </div>
+                        <div class="aiz-user-sidenav rounded overflow-hidden">
+                            <div class="sidemnenu mb-3">
+                                <ul class="aiz-side-nav-list" data-toggle="aiz-side-menu">
+                                    <li class="aiz-side-nav-item">
+                                        <a href="home.aspx" class="aiz-side-nav-link active">
+                                            <%--<i class="las la-home aiz-side-nav-icon"></i>--%>
+                                            <i class="fa-solid fa-gauge aiz-side-nav-icon"></i>
+                                            <span class="aiz-side-nav-text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="aiz-side-nav-item">
+                                        <a href="javascript:void(0);" class="aiz-side-nav-link">
+                                            <%--<i class="las la-shopping-basket aiz-side-nav-icon"></i>--%>
+                                            <i class="fa-solid fa-angle-down aiz-side-nav-icon"></i>
+                                            <span class="aiz-side-nav-text">Packages</span>
+                                            <span class="aiz-side-nav-arrow"></span>
+                                        </a>
+                                        <ul class="aiz-side-nav-list level-2">
+                                            <li class="aiz-side-nav-item">
+                                                <a href="packs.aspx" class="aiz-side-nav-link">
+                                                    <span class="aiz-side-nav-text">Packages</span>
+                                                </a>
+                                            </li>
+                                            <li class="aiz-side-nav-item">
+                                                <a href="purchased_history" class="aiz-side-nav-link">
+                                                    <span class="aiz-side-nav-text">Package Purchase History</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="aiz-side-nav-item">
+                                        <a href="ViewInterest.aspx" class="aiz-side-nav-link">
+                                            <%--<i class="la la-heart-o aiz-side-nav-icon"></i>--%>
+                                            <i class="fa-solid fa-heart aiz-side-nav-icon"></i>
+                                            <span class="aiz-side-nav-text">View Interest</span>
+                                        </a>
+                                    </li>
+                                    <li class="aiz-side-nav-item">
+                                        <a href="changepassword.aspx" class="aiz-side-nav-link">
+                                            <%--<i class="las la-key aiz-side-nav-icon"></i>--%>
+                                            <i class="fa-solid fa-key aiz-side-nav-icon"></i>
+                                            <span class="aiz-side-nav-text">Change Password</span>
+                                        </a>
+                                    </li>
+                                    <li class="aiz-side-nav-item">
+                                        <a href="update_profile.aspx" class="aiz-side-nav-link">
+                                            <%--<i class="las la-user aiz-side-nav-icon"></i>--%>
+                                            <i class="fa-solid fa-user aiz-side-nav-icon"></i>
+                                            <span class="aiz-side-nav-text">Manage Profile</span>
+                                        </a>
+                                    </li>
+                                    <li class="aiz-side-nav-item">
+                                        <a href="feedback.aspx" class="aiz-side-nav-link">
+                                            <%--<i class="las la-user aiz-side-nav-icon"></i>--%>
+                                            <i class="fa-solid fa-comment aiz-side-nav-icon"></i>
+                                            <span class="aiz-side-nav-text">Feedack</span>
+                                        </a>
+                                    </li>
+                                    <%--<li class="aiz-side-nav-item">
+                                        <a href="javascript:void(0);" class="aiz-side-nav-link" onclick="account_deactivation()">
+                                            <%--<i class="las la-lock aiz-side-nav-icon"></i>
+                                            <span class="aiz-side-nav-text">Deactive Account</span>
+                                        </a>
+                                    </li>--%>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="logout.aspx" class="btn btn-block btn-primary">
+                                    <%--<i class="las la-sign-out-alt"></i>--%>
+                                    <span>Logout</span>
+
+                                    <form id="logout-form" action="#" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="gyXM93j6u3droISP5X2NHl4sttDexX4zjHUBBwDf">
+                                    </form>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <footer class="aiz-footer fs-13 mt-auto text-white fw-400 pt-5">
+            <div class="container">
+
+                <div class="row mb-4">
+                    <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-10 text-center mx-auto">
+                        <div class="logo mb-4">
+                            <a href="home.aspx" class="d-inline-block py-15px">
+                                <img src="https://demo.activeitzone.com/matrimonial/public/uploads/all/xWzDeQ7woGheOebgv9gVfaAWtMd2U8cC05eDaYYw.png" alt="testing" class="mw-100 h-30px h-md-40px" height="40">
+                            </a>
+                        </div>
+                        <div class="opacity-60">
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h4 class="text-uppercase text-primary fs-14 border-bottom border-primary pb-4 mb-4">Contacts</h4>
+                    <div class="row opacity-60 no-gutters">
+                        <div class="col-xl col-md-6 mb-4">
+                            <div class="mb-3 opacity-60">
+                                <%--<i class="las la-home mr-2"></i>--%>
+                                <span>Address</span>
+                            </div>
+                            <div>UTU, Maliba</div>
+                        </div>
+                        <div class="col-xl col-md-6 mb-4">
+                            <div class="mb-3 opacity-60">
+                                <%--<i class="las la-globe mr-2"></i>--%>
+                                <span>Website</span>
+                            </div>
+                            <div>www.Matrimonial.com</div>
+                        </div>
+                        <div class="col-xl col-md-6 mb-4">
+                            <div class="mb-3 opacity-60">
+                                <%--<i class="las la-envelope mr-2"></i>--%>
+                                <span>Email</span>
+                            </div>
+                            <div>19bmiit067@gmail.com</div>
+                        </div>
+                        <div class="col-xl col-md-6 mb-4">
+                            <div class="mb-3 opacity-60">
+                                <%--<i class="las la-phone mr-2"></i>--%>
+                                <span>Phone</span>
+                            </div>
+                            <div>+91 83475 35502</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://demo.activeitzone.com/matrimonial/public/assets/js/vendors.js"></script>
+    <script src="https://demo.activeitzone.com/matrimonial/public/assets/js/aiz-core.js"></script>
+
+    <script type="text/javascript">
+        function alertlogout() {
+            alert('Password Changed Successfully...!');
+            window.location.href = 'logout.aspx';
+        }
+    </script>
+
+    <script type="text/javascript">
+
+        function account_deactivation() {
+            var status = 0
+            $('.account_status_change_modal').modal('show');
+            if (status == 0) {
+                $('#deacticvation_status').val(1);
+                $('#confirmation_note').html('Do You Realy Want To Deactive Your Account');
+            }
+            else {
+                $('#deacticvation_status').val(0);
+                $('#confirmation_note').html('Are You Sure To Reactive Your Account');
+            }
+        }
+
+
+    </script>
+
+     <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="public/assets/js/vendors.js"></script>
+    <script src="public/assets/js/aiz-core.js"></script>
+
+    <script src="../../www.google.com/recaptcha/api.js" async defer></script>
+
+</body>
+</html>
